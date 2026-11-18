@@ -1,0 +1,450 @@
+
+/* =================================
+   CLIENTHUB - GLOBAL STYLES
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fb;
+    color: #263238;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =================================
+   DASHBOARD LAYOUT
+================================= */
+
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =================================
+   SIDEBAR
+================================= */
+
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    min-height: 100vh;
+    background: #172554;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 18px;
+}
+
+.brand {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.brand-light {
+    color: #60a5fa;
+}
+
+.menu-label {
+    color: #94a3b8;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 10px 12px 15px;
+}
+
+.nav-link {
+    display: block;
+    color: #cbd5e1;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: #2563eb;
+    color: white;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 25px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* =================================
+   MAIN CONTENT
+================================= */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    min-height: 75px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.topbar h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.admin-profile {
+    color: #475569;
+    font-weight: 600;
+}
+
+.content-area {
+    padding: 30px;
+    width: 100%;
+}
+
+/* =================================
+   WELCOME SECTION
+================================= */
+
+.welcome-section {
+    margin-bottom: 25px;
+}
+
+.welcome-section h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #172554;
+}
+
+.welcome-section p {
+    color: #64748b;
+    margin: 0;
+}
+
+/* =================================
+   STAT CARDS
+================================= */
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+    height: 100%;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.stat-card h6 {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.stat-card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    color: #172554;
+}
+
+.stat-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.stat-icon.blue {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.stat-icon.green {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.stat-icon.orange {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+/* =================================
+   TABLE CONTAINER
+================================= */
+
+.table-container {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 22px;
+    margin-top: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.table-header h5 {
+    font-weight: 700;
+    color: #172554;
+    margin: 0;
+}
+
+.search-box {
+    max-width: 260px;
+    width: 100%;
+}
+
+/* =================================
+   TABLE DESIGN
+================================= */
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    margin-bottom: 0;
+    vertical-align: middle;
+    min-width: 700px;
+}
+
+.table thead th {
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.table tbody td {
+    padding: 15px;
+    color: #475569;
+    font-size: 14px;
+}
+
+.table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* =================================
+   STATUS BADGES
+================================= */
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-badge.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status-badge.inactive {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* =================================
+   BUTTONS
+================================= */
+
+.btn {
+    border-radius: 7px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.btn-primary {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-danger:hover {
+    transform: translateY(-1px);
+}
+
+/* =================================
+   PAGINATION
+================================= */
+
+.pagination {
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+
+.pagination .page-link {
+    color: #2563eb;
+    border-radius: 6px;
+    margin: 0 3px;
+}
+
+.pagination .active .page-link {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+
+/* =================================
+   ALERTS
+================================= */
+
+.alert {
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+.page-footer {
+    padding: 20px 30px;
+    color: #94a3b8;
+    font-size: 13px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 210px;
+        min-width: 210px;
+    }
+
+    .content-area {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 100%;
+        min-height: auto;
+        padding: 18px;
+    }
+
+    .brand {
+        margin-bottom: 15px;
+    }
+
+    .menu-label {
+        margin-top: 5px;
+    }
+
+    .sidebar-footer {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .topbar {
+        padding: 15px 20px;
+    }
+
+    .content-area {
+        padding: 18px;
+    }
+
+    .welcome-section h2 {
+        font-size: 22px;
+    }
+
+    .table-container {
+        padding: 15px;
+    }
+
+    .table-header {
+        align-items: stretch;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content-area {
+        padding: 14px;
+    }
+
+    .stat-card {
+        padding: 17px;
+    }
+
+    .stat-card h3 {
+        font-size: 24px;
+    }
+
+    .table-container {
+        padding: 12px;
+    }
+
+    .page-footer {
+        padding: 15px;
+    }
+}
