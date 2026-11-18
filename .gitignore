@@ -20,3 +20,6 @@ desktop.ini
 
 /vendor/
 /node_modules/
+
+# Private database configuration
+config.local.php
